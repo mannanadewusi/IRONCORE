@@ -1,4 +1,4 @@
-﻿/* CSS Variables */
+/* CSS Variables */
         :root {
             --primary-red: #E6192B;
             --primary-red-hover: #BF101E;
@@ -474,6 +474,51 @@
             text-transform: uppercase;
         }
 
+        /* Why Us Section */
+        .why-us {
+            padding: 100px 0;
+            background-color: var(--dark-bg);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .why-card {
+            background-color: var(--darker-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .why-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(230, 25, 43, 0.5);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+        }
+
+        .why-icon {
+            font-size: 2.5rem;
+            color: var(--primary-red);
+            margin-bottom: 20px;
+        }
+
+        .why-title {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: var(--white);
+        }
+
+        .why-desc {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
         /* How It Works Section */
         .process {
             padding: 100px 0;
@@ -799,6 +844,7 @@
             .hero h1 { font-size: 4rem; }
             .programs-grid { grid-template-columns: repeat(2, 1fr); }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .why-grid { grid-template-columns: repeat(2, 1fr); }
             .pricing-grid { grid-template-columns: repeat(2, 1fr); }
             .footer-grid { grid-template-columns: 1fr 1fr; }
         }
@@ -824,7 +870,7 @@
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             }
             
-            .programs-grid, .stats-grid, .testimonials, .process-steps, .pricing-grid, .footer-grid {
+            .programs-grid, .stats-grid, .why-grid, .testimonials, .process-steps, .pricing-grid, .footer-grid {
                 grid-template-columns: 1fr;
             }
             
