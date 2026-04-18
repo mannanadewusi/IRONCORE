@@ -30,6 +30,13 @@
             background-color: var(--dark-bg);
             line-height: 1.6;
             overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        body > * {
+            flex-shrink: 0;
         }
 
         h1, h2, h3, h4, .logo {
@@ -370,7 +377,9 @@
         }
 
         .program-link::after {
-            content: 'â†’';
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            content: '\f061';
             transition: transform 0.3s;
         }
 
@@ -722,6 +731,7 @@
             background-color: var(--darker-bg);
             padding: 80px 0 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: auto;
         }
 
         .footer-grid {
